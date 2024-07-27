@@ -36,3 +36,12 @@ it is mainly a variation of Insertion Sort. In insertion sort, we move elements 
 ##### complexity
 - *Time Complexity: O(N2)*
 - *Auxiliary Space: O(1)*
+
+## Cocktail Sort Algorithm
+Cocktail Sort is a variation of Bubble Sort that improves efficiency by traversing an array in both directions. Instead of just moving the largest unsorted element to its correct position as in Bubble Sort, Cocktail Sort:
+
+- Moves from left to right, pushing the largest element to the end.
+- Then moves from right to left, pushing the smallest element to the beginning.
+##### complexity
+- *Time Complexity: O(N2)*
+- *Auxiliary Space: O(1)*
