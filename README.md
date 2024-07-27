@@ -22,3 +22,10 @@ selects the smallest (or largest) element from the unsorted portion of the list 
 ##### complexity
 - *Time Complexity: O(N2)*
 - *Auxiliary Space: O(1)*
+
+## Quick Sort Algorithm
+it is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
+![alt text](image-3.png)
+##### complexity
+- *Time Complexity: O(NlogN)*
+- *Auxiliary Space: O(logN)*
