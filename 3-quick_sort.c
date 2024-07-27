@@ -8,10 +8,10 @@
  */
 void quick_sort(int *array, size_t size)
 {
-    if (array == NULL || size < 2)
-        return;
+	if (array == NULL || size < 2)
+		return;
 
-    quick_sort_helper(array, 0, size - 1, size);
+	quick_sort_helper(array, 0, size - 1, size);
 }
 
 /**
@@ -25,12 +25,12 @@ void quick_sort_helper(int *array, int low, int high, size_t size)
 {
 	int piv_idx;
 
-    if (low < high)
-    {
-        piv_idx = partition(array, low, high, size);
-        quick_sort_helper(array, low, piv_idx - 1, size);
-        quick_sort_helper(array, piv_idx + 1, high, size);
-    }
+	if (low < high)
+	{
+		piv_idx = partition(array, low, high, size);
+		quick_sort_helper(array, low, piv_idx - 1, size);
+		quick_sort_helper(array, piv_idx + 1, high, size);
+	}
 }
 
 /**
@@ -46,26 +46,26 @@ int partition(int *array, int low, int high, size_t size)
 	int pivot, i, j;
 
 	pivot = array[high];
-    i = low - 1;
+	i = low - 1;
 
-    for (j = low; j < high; j++)
-    {
-        if (array[j] <= pivot)
-        {
-            i++;
-            if (i != j)
-            {
-                swap(&array[i], &array[j]);
-                print_array(array, size);
-            }
-        }
-    }
-    if (i + 1 != high)
-    {
-        swap(&array[i + 1], &array[high]);
-        print_array(array, size);
-    }
-    return (i + 1);
+	for (j = low; j < high; j++)
+	{
+	if (array[j] <= pivot)
+	{
+		i++;
+		if (i != j)
+		{
+			swap(&array[i], &array[j]);
+			print_array(array, size);
+		}
+	}
+	}
+	if (i + 1 != high)
+	{
+	swap(&array[i + 1], &array[high]);
+	print_array(array, size);
+	}
+	return (i + 1);
 }
 
 /**
@@ -77,7 +77,7 @@ void swap(int *a, int *b)
 {
 	int t;
 
-    t = *a;
-    *a = *b;
-    *b = t;
+	t = *a;
+	*a = *b;
+	*b = t;
 }
