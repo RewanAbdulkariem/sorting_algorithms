@@ -45,3 +45,11 @@ Cocktail Sort is a variation of Bubble Sort that improves efficiency by traversi
 ##### complexity
 - *Time Complexity: O(N2)*
 - *Auxiliary Space: O(1)*
+
+## Counting Sort Algorithm
+Counting Sort is a non-comparison-based sorting algorithm that works well when there is limited range of input values.
+The basic idea behind Counting Sort is to count the frequency of each distinct element in the input array and use that information to place the elements in their correct sorted positions.
+
+##### complexity
+- *Time Complexity: O(N+M)*
+- *Auxiliary Space: O(N+M)*
