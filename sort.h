@@ -39,4 +39,7 @@ void merge(int *array, int *lefthalf, size_t left_size,
 
 void heap_sort(int *array, size_t size);
 void sift_down(int *array, size_t size, size_t i, size_t heap_size);
+void radix_sort(int *array, size_t size);
+void count_sort(int *array, size_t size, int exp);
+int get_max(int *arr, size_t size);
 #endif
