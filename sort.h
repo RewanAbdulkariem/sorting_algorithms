@@ -36,4 +36,7 @@ void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void merge(int *array, int *lefthalf, size_t left_size,
 	int *righthalf, size_t right_size);
+
+void heap_sort(int *array, size_t size);
+void sift_down(int *array, size_t size, size_t i, size_t heap_size);
 #endif
