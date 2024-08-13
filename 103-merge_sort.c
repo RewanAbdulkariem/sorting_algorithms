@@ -35,9 +35,9 @@ void merge_sort(int *array, size_t size)
 /**
  * merge - Merges two sorted halves of an array into a single sorted array
  * @array: Pointer to the array of integers to be sorted
- * @lefthalf: Pointer to the left half
+ * @left: Pointer to the left half
  * @left_size: Size of the left half
- * @righthalf: Pointer to the right half
+ * @right: Pointer to the right half
  * @right_size: Size of the right half
  */
 void merge(
