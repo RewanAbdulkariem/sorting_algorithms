@@ -26,6 +26,7 @@ void radix_sort(int *array, size_t size)
  * get_max - Sorts an array of integers
  * @arr: Pointer to the array of integers
  * @size: Size of the array
+ * Return: max num
  */
 int get_max(int *arr, size_t size)
 {
