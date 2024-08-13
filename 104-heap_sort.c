@@ -10,6 +10,9 @@ void heap_sort(int *array, size_t size)
 	size_t i;
 	int temp;
 
+	if (array == NULL || size < 2)
+		return;
+
 	for (i = size / 2; i > 0; i--)
 		sift_down(array, size, i - 1, size);
 	sift_down(array, size, 0, size);
